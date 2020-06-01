@@ -30,7 +30,8 @@ module logicalunit(
     );
     
     wire   out;
-         
-      //Todo: add you logic here
+	//NOTE: func is a 4-bit input, a and b are 1-bit inputs
+
+      assign out = (a&&b)?func[3]:(a?func[2]:(b?func[1]:func[0]));
 
 endmodule
