@@ -1,7 +1,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Exercise #1 
+<<<<<<< HEAD
 // Student Name:Joshua Gei
 // Date: 6/1/2020
+=======
+// Student Name: Joshua Gei
+// Date: 1/6/2020
+>>>>>>> 0b2d31b3ccf99e4bfdaf53fd9ff3ac1eb33a3dc5
 //
 //  Description: In this exercise, you need to design a logical unit, where the  
 //  output acts according to the following truth table:
