@@ -57,10 +57,10 @@ module traffic_lights(
    
   //for testing purposes only - but may have to remove (will remove once I find an alternative solution to initializing)
         initial
-        red = 1;
+        red = $urandom_range(1'b0,1'b1);
         initial
-        amber = 1;
+        amber = $urandom_range(1'b0,1'b1);
         initial 
-        green = 1;        
+        green = $urandom_range(1'b0,1'b1);        
         
 endmodule
