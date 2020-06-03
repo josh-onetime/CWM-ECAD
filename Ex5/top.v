@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Exercise #5 
 // Student Name: Joshua Gei
-// Date: 2/6/2020
+// Date: 2/6/2020 (edited 3/6/2020)
 //
 //  Description: In this exercise, you need to implement a UK traffic lights 
 //  sequencing system. 
@@ -23,44 +23,41 @@ module traffic_lights(
 	);
 
 // Ports
-    	output red,amber,green;     // output port
-	input clk;	            // input ports
+    	output red,amber,green; // output port
+	input clk;	        // input ports
                     
 //Register
 	reg red,amber,green;        
 
 //Logic
+	always@(posedge clk) begin
+		case({red,amber,green})
+			3'b100: begin //Red light only
+				red = 1;
+				amber = 1;
+				green = 0;
+			end
+			3'b110: begin //Red and amber lights only
+				red = 0;
+				amber = 0;
+				green = 1;
+			end
+			3'b001: begin //Green light only
+				red = 0;
+				amber = 1;
+				green = 0;
+			end
+			3'b010: begin //Amber light only
+				red = 1;
+				amber = 0;
+				green = 0;
+			end
+			default: begin //Any other state, set to red light only
+				red = 1;
+				amber = 0;
+				green = 0;
+			end
+		endcase
+	end
 
-    always @(posedge clk)
-	    	if ((red!=1|amber!=0|green!=0)&(red!=1|amber!=1|green!=0)&(red!=0|amber!=0|green!=1)&(red!=0|amber!=1|green!=0)) 			begin 
-  	        	red <= 1;       //if not any of the valid states (this includes don't care states),
-  	        	amber <= 0;     //go to 100 
-  	        	green <= 0;
-	    	end else if (red==1&&amber==0&&green==0) begin
-	        	red <= 1;
-	        	amber <= 1;
-	        	green <= 0;
-        	end else if (red==1&&amber==1&&green==0) begin
-	        	red <= 0;
-	        	amber <= 0;
-	        	green <= 1;
-        	end else if (red==0&&amber==0&&green==1) begin
-	        	red <= 0;
-	        	amber <= 1;
-	        	green <= 0;
-        	end else if (red==0&&amber==1&&green==0) begin
-	        	red <= 1;
-	        	amber <= 0;
-	        	green <= 0;
-        	end
-        
-   
-  //for testing purposes only - but may have to remove (will remove once I find an alternative solution to initializing)
-        initial
-        red = $urandom_range(1'b0,1'b1);
-        initial
-        amber = $urandom_range(1'b0,1'b1);
-        initial 
-        green = $urandom_range(1'b0,1'b1);        
-        
 endmodule
