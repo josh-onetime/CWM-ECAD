@@ -1,3 +1,26 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Exercise #6 
+// Student Name: Joshua Gei
+// Date: 3/6/2020
+//
+//
+//  Description: In this exercise, you need to design a multiplexer between a dice and traffic 
+//  lights, where the output acts according to the following truth table:
+//
+//  sel | out
+// -----------------
+//   0  | dice
+//   1  | traffic lights
+//
+//  inputs:
+//           rst, clk, button,sel
+//
+//  outputs:
+//           result[2:0]
+//
+//////////////////////////////////////////////////////////////////////////////////
+
+
 `timescale 1ns / 100ps
 
 module dice_lights_multiplexer(
@@ -29,6 +52,7 @@ module dice_lights_multiplexer(
 		.clk (clk), 	
 		.rst (rst),
 		.throw (throw[2:0]) );
+
 //Instantiate traffic_lights module
 	traffic_lights lights(
 		.clk (clk),
