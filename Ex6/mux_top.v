@@ -1,29 +1,11 @@
-//////////////////////////////////////////////////////////////////////////////////
-// Exercise #2 
-// Student Name: Joshua Gei
-// Date: 1st June 2020
-//
-//  Description: In this exercise, you need to design a multiplexer, where the  
-//  output acts according to the following truth table:
-//
-//  sel | out
-// -----------------
-//   0  | a
-//   1  | b
-//
-//  inputs:
-//           a, b, sel
-//
-//  outputs:
-//           out
-//////////////////////////////////////////////////////////////////////////////////
+//Multiplexer with two 3-bit inputs, one 1-bit select input and one 3-bit output.
 
 `timescale 1ns / 100ps
 
-module mux(  input a,                 // 1-bit input called a
-             input b,                 // 1-bit input called b
-             input sel, 	      // input sel used to select between a and b
-	     output out);             // 1-bit output
+module mux(  input [2:0] a,                
+             input [2:0] b,                 
+             input sel, 	      
+	     output [2:0] out);             
  
      	     wire out;
 
