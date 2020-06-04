@@ -21,10 +21,13 @@ create_fileset -constrset -quiet constraints
 
 #Todo: Add your IP here
 <<<<<<< HEAD
+<<<<<<< HEAD
 create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name mem_xtable
 set_property -dict [list CONFIG.Component_Name {mem_xtable} CONFIG.Write_Depth_A {64} CONFIG.Load_Init_File {true} CONFIG.Coe_File {/home/centos/CWM-ECAD/Ex7/mem_init.coe}] [get_ips mem_xtable]
 
 
+=======
+>>>>>>> upstream/master
 =======
 >>>>>>> upstream/master
 

@@ -1,6 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Test bench for Exercise #7 - Times Table
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Student Name: Joshua Gei
 // Date: 3/6/2020 - 4/6/2020
 //
@@ -74,6 +75,8 @@ module top_tb(
 endmodule 
 
 =======
+=======
+>>>>>>> upstream/master
 // Student Name:
 // Date: 
 //
@@ -81,4 +84,7 @@ endmodule
 // You need to write the whole file
 //////////////////////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master

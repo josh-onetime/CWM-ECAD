@@ -1,8 +1,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Exercise #6 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Student Name: Joshua Gei
 // Date: 3/6/2020
+=======
+// Student Name:
+// Date: 
+>>>>>>> upstream/master
 =======
 // Student Name:
 // Date: 
@@ -24,6 +29,7 @@
 //           result[2:0]
 //
 //////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 <<<<<<< HEAD
 `timescale 1ns / 100ps
 
@@ -149,6 +155,9 @@ module dice_lights_multiplexer(
 		.green (green) );
   
 endmodule
+=======
+
+>>>>>>> upstream/master
 =======
 
 >>>>>>> upstream/master
