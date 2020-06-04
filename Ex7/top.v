@@ -1,30 +1,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Exercise #7
-<<<<<<< HEAD
-<<<<<<< HEAD
 // Student Name: Joshua Gei
 // Date: 3/6/2020 - 4/6/2020
 //
 //  Description: Implement a times table of 0..7x0..7 using a memory.
-=======
-=======
->>>>>>> upstream/master
-// Student Name:
-// Date: 
-//
-//  Description: In this exercise, you need to implement a times table of 0..7x0..7
-//  using a memory.
-<<<<<<< HEAD
->>>>>>> upstream/master
-=======
->>>>>>> upstream/master
 //
 //  inputs:
 //           clk, a[2:0], b[2:0], read
 //
 //  outputs:
-<<<<<<< HEAD
-<<<<<<< HEAD
 //           result[5:0]
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -53,14 +37,3 @@ module multiplier(clk,a,b,read,result);
 endmodule
 
 //IT ACTUALLY WORKED I'M NOT EVEN 100% SURE WHY IT WORKED BUT YAY. so we didn't even need to know anything about packaging IP cores yet, and don't need to learn how to manually update the tcl file. maybe would be a good idea to omit those parts of the presentation first, if not it could be very confusing for beginners (like me. although others might grasp this more quickly than I did.)
-=======
-=======
->>>>>>> upstream/master
-//           result[4:0]
-//////////////////////////////////////////////////////////////////////////////////
-
-
-<<<<<<< HEAD
->>>>>>> upstream/master
-=======
->>>>>>> upstream/master
