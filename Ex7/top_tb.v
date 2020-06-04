@@ -1,5 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Test bench for Exercise #7 - Times Table
+<<<<<<< HEAD
 // Student Name: Joshua Gei
 // Date: 3/6/2020 - 4/6/2020
 //
@@ -72,3 +73,12 @@ module top_tb(
 	end
 endmodule 
 
+=======
+// Student Name:
+// Date: 
+//
+// Description: A testbench module to test Ex7 - Times Table
+// You need to write the whole file
+//////////////////////////////////////////////////////////////////////////////////
+
+>>>>>>> upstream/master

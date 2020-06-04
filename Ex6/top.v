@@ -1,7 +1,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Exercise #6 
+<<<<<<< HEAD
 // Student Name: Joshua Gei
 // Date: 3/6/2020
+=======
+// Student Name:
+// Date: 
+>>>>>>> upstream/master
 //
 //
 //  Description: In this exercise, you need to design a multiplexer between a dice and traffic 
@@ -19,6 +24,7 @@
 //           result[2:0]
 //
 //////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 `timescale 1ns / 100ps
 
 //dice submodule
@@ -143,3 +149,6 @@ module dice_lights_multiplexer(
 		.green (green) );
   
 endmodule
+=======
+
+>>>>>>> upstream/master
