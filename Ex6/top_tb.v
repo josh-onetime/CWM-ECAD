@@ -1,7 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Test bench for Exercise #6 - Dice or Traffic Lights?
-<<<<<<< HEAD
-<<<<<<< HEAD
 // Student Name: Joshua Gei
 // Date: 3/6/2020
 //
@@ -70,17 +68,3 @@ initial begin
 		$finish;
 	end
 endmodule
-=======
-=======
->>>>>>> upstream/master
-// Student Name:
-// Date: 
-//
-// Description: A testbench module to test Ex6 - Dice or Traffic Lights?
-// You need to write the whole file
-//////////////////////////////////////////////////////////////////////////////////
-
-<<<<<<< HEAD
->>>>>>> upstream/master
-=======
->>>>>>> upstream/master
